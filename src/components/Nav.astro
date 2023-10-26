@@ -2,6 +2,7 @@
 import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import type { iconPaths } from './IconPaths';
+import { LanguageSelector } from "astro-i18next/components";
 
 /** Main menu items */
 
@@ -30,6 +31,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			<Icon icon="code" color="var(--accent-regular)" size="1.6em" />
 			Rosa Piñeros
 		</a>
+		
 		<menu-button>
 			<template>
 				<button class="menu-button" aria-expanded="false">
@@ -99,6 +101,10 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 					</li>
 				))
 			}
+			
+			<li class="flex align-center">
+				<LanguageSelector showFlag={true} class="my-select-class bg-transparent" />
+			</li>
 		</ul>
 		<div class="menu-footer">
 			<div class="socials">
@@ -111,7 +117,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 					))
 				}
 			</div>
-
 			<div class="theme-toggle">
 				<ThemeToggle />
 			</div>
@@ -190,7 +195,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		font-size: 1.5rem;
 		color: var(--gray-300);
 		background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
-		box-shadow: var(--shadow-md);
+		box-shadow: var(--shadow-sm);
 	}
 
 	.menu-button[aria-expanded='true'] {
@@ -282,6 +287,12 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		height: calc(var(--icon-size) + 2 * var(--icon-padding));
 	}
 
+	@media (min-width: 768px) and (max-width: 959px){
+		div.menu-header > a {
+			font-size: 16px;
+		}
+	}
+
 	@media (min-width: 50em) {
 		nav {
 			display: grid;
@@ -323,7 +334,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			z-index: -1;
 		}
 
-		.link {
+		.link{
 			padding: 0.5rem 1rem;
 			border-radius: 999rem;
 			transition:
@@ -331,13 +342,23 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 				background-color var(--theme-transition);
 		}
 
+		.my-select-class {
+			border-radius: 999rem;
+			color: var(--accent-dark);
+			transition:
+				color var(--theme-transition),
+				background-color var(--theme-transition);
+		}
+
 		.link:hover,
-		.link:focus {
+		.link:focus,
+		.my-select-class:hover,
+		.my-select-class:focus {
 			color: var(--gray-100);
 			background-color: var(--gray-800);
 		}
 
-		.link.active {
+		.link.active, .my-select-class.active {
 			color: var(--accent-text-over);
 			background-color: var(--accent-regular);
 		}

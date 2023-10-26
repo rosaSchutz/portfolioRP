@@ -7,6 +7,8 @@ import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 
+import i18next, { t } from "i18next";
+
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
@@ -15,7 +17,7 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
-<html lang="en">
+<html lang={i18next.language}>
 	<head>
 		<MainHead title={title} description={description} />
 	</head>
