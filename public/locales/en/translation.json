@@ -1,6 +1,26 @@
 {
-    "hero": {
-      "title": "Hi, my name is Rosa Piñeros",
-      "tagline": "I'm currently charting my path as a web developer, who is currently based in Bogotá, Colombia."
-    }
+  "hero": {
+    "title": "Hi, my name is Rosa Piñeros",
+    "title2": "My Projects",
+    "tagline": "I'm currently charting my path as a web developer, who is currently based in Bogotá, Colombia."
+  },
+  "headerNav": {
+    "link1": "Home",
+    "link2": "Projects"
+  },
+  "recentProjects": {
+    "title": "Recent Projects",
+    "button": "View All"
+  },
+  "constructions": {
+    "text": "We are under construction"
+  },
+  "error404": {
+    "text": "Page Not Found",
+    "tagline": "Not Found"
+  },
+  "sendMe": {
+    "text": "Interested in working together?",
+    "button": "Send Me a Message"
   }
+}

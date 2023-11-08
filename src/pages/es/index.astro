@@ -54,51 +54,39 @@ const projects = (await getCollection("work"))
     <main class="wrapper stack gap-20 lg:gap-48">
       <section class="section with-background with-cta">
         <header class="section-header stack gap-2 lg:gap-4">
-          <h4>Recent Projects</h4>
+          <h4>{t("recentProjects.title")}</h4>
         </header>
 
         <div class="gallery">
           <Grid variant="offset">
             {
               projects.map((project) => (
+              /* No borrar
                 <li>
                   <PortfolioPreview project={project} />
+                </li>
+                */
+                <li>
                 </li>
               ))
             }
           </Grid>
+          <h5 class="text-center">{t("constructions.text")}</h5>
+          <img class="m-auto"
+		  alt={t("error404.text")}
+		  width="480"
+		  height="620"
+		  src="/assets/error.png"
+		/>
         </div>
 
         <div class="cta">
           <CallToAction href="/work/" target="_blank">
-            View All
+            {t("recentProjects.button")}
             <Icon icon="arrow-right" size="1.2em" />
           </CallToAction>
         </div>
       </section>
-      <!--
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
-			-->
     </main>
 
     <ContactCTA />

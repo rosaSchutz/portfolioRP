@@ -2,4 +2,11 @@
 export default {
     defaultLocale: "en",
     locales: ["en", "es"],
+    /*
+    routes: {
+      es: {
+        "work": "proyectos",
+      }
+     },
+     */
   };

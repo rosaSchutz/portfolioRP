@@ -1,6 +1,31 @@
 {
     "hero": {
       "title": "Hola, mi nombre es Rosa Piñeros",
+      "title2": "Mis Proyectos",
       "tagline": "Actualmente estoy trazando mi camino como desarrolladora web. Estoy aprendiendo activamente el desarrollo web a través de estas tecnologías, resido en Bogotá, Colombia. "
+    },
+
+    "headerNav": {
+      "link1": "Inicio",
+      "link2": "Proyectos"
+    },
+
+    "recentProjects": {
+      "title": "Proyectos recientes",
+      "button": "Ver Todos"
+    },
+
+    "constructions": {
+      "text": "Estamos en construcción"
+    },
+
+    "error404": {
+      "text": "Página no encontrada",
+      "tagline": "No encontrado"
+    },
+
+    "sendMe": {
+      "text": "¿Quieres trabajar conmigo?",
+      "button": "Envíame un mensaje"
     }
   }
