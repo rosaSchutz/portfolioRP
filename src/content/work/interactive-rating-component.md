@@ -9,7 +9,7 @@ description: |
 tags:
   - HTML5
   - Javascript
-  - Tailwindcss
+  - Tailwind
   - Flexbox
 ---
 
@@ -18,6 +18,9 @@ tags:
 - Live Site URL: <a href="https://rosaschutz.github.io/interactiveRatingComponent/">https://rosaschutz.github.io/interactiveRatingComponent/</a>
 
 - Solution URL: <a href="https://github.com/rosaSchutz/interactiveRatingComponent">https://github.com/rosaSchutz/interactiveRatingComponent</a>
+
+<video src="/assets/interactiveRatingComponent.mov" type="video/mov" controls>
+</video>
 
 
 #### My process

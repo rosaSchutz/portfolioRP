@@ -20,7 +20,6 @@ const projects = (await getCollection("work")).sort((a, b) => b.data.publishDate
     <main class="wrapper stack gap-8">
       <Hero title={t("hero.title2")} tagline="" align="start" />
       <Grid variant="offset">
-        <!--
         {
           projects.map((project) => (
 						<li>
@@ -28,15 +27,7 @@ const projects = (await getCollection("work")).sort((a, b) => b.data.publishDate
 						</li>
           ))
         }
-		 -->
       </Grid>
-	  	<h5 class="text-center">{t("constructions.text")}</h5>
-		<img class="m-auto"
-		  alt={t("error404.text")}
-		  width="480"
-		  height="620"
-		  src="/assets/404Gatos.png"
-		/>
     </main>
     <ContactCTA />
   </div>
