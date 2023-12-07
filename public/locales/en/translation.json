@@ -22,5 +22,9 @@
   "sendMe": {
     "text": "Interested in working together?",
     "button": "Send Me a Message"
+  },
+
+  "examFinalBackend": {
+    "description": "Appointment booking system. A system is to be implemented to manage the booking of appointments for a dental clinic."
   }
 }

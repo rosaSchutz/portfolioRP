@@ -27,5 +27,9 @@
     "sendMe": {
       "text": "¿Quieres trabajar conmigo?",
       "button": "Envíame un mensaje"
+    },
+
+    "examFinalBackend": {
+      "description": "Sistema para gestionar la reserva de citas en una clínica dental."
     }
   }
